@@ -1,5 +1,5 @@
 import pandas
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 from sklearn import model_selection
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
@@ -20,7 +20,7 @@ print(dataset.shape) # 150 X 5
 print(dataset.groupby('class').size())
 
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-plt.show() #visualizing data
+plot.show() #visualizing data
 
 array = dataset.values #splitting dataset into training and testing set
 X = array[:,0:4]
